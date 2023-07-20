@@ -33,6 +33,7 @@ function App() {
     }
 
     // Recent tab
+    // https://stackoverflow.com/questions/50369526/google-file-picker-recent-tab
     const recentView = new ggPicker.DocsView();
     if (recentView) {
       recentView.setLabel('Recent');
@@ -41,6 +42,7 @@ function App() {
     }
 
     // Shared Drive
+    // https://stackoverflow.com/questions/75268380/how-to-show-a-list-of-shared-with-me-files-in-google-picker
     const sharedDriveView = new ggPicker.DocsView();
     if (sharedDriveView) {
       sharedDriveView.setEnableDrives(true);
